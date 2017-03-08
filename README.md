@@ -1,5 +1,3 @@
-# terminal
-
 ## iterm2
 ### dynamic profiles
 <https://www.iterm2.com/documentation-dynamic-profiles.html>
