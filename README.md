@@ -34,3 +34,12 @@ Set `ZSH_THEME=""` in your .zshrc to disable oh-my-zsh themes.
 
 ### zsh-syntax-highlighting
 <https://github.com/zsh-users/zsh-syntax-highlighting>
+
+
+## Atom sync plugin
+token: afbf5288fadf5799413940dd2d03e98cf62a8b64
+gist id: b982edb488593a2e8cfcaf9d65ba5d49
+
+## VScode sync extension
+token: 56f6d80882b8c6a300931ca1c846edbf45c364b7
+gist id: 108a3ce6ab60bf1e9cb124c5d370e6ca
