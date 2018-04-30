@@ -1014,7 +1014,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>936 500 231 329 0 0 1920 1057 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1162 388 611 191 0 0 1920 1057 </string>
+	<string>562 53 615 236 0 0 1680 1027 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>395 418 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -1022,9 +1022,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>2560 -340 606 469 2560 -480 1080 1920 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>373 302 796 473 0 0 1440 877 </string>
+	<string>212 496 796 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>70 68 1270 787 0 0 1440 877 </string>
+	<string>249 166 1270 787 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1290 413 1270 787 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1586,7 +1586,7 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>Consolas-Bold 16</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -2501,7 +2501,7 @@
 			<key>AWDS Tab Option</key>
 			<string>Recycle</string>
 			<key>AWDS Window Directory</key>
-			<string>/Users/yuzheng/WCF</string>
+			<string>/Users/yuzheng/Watson</string>
 			<key>AWDS Window Option</key>
 			<string>Yes</string>
 			<key>Allow Title Reporting</key>
@@ -2757,7 +2757,7 @@
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
 			<real>2</real>
 			<key>Bold Color</key>
@@ -2827,7 +2827,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Advanced</string>
+			<string>Yes</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
