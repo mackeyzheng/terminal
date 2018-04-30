@@ -18,7 +18,6 @@ Plugin 'vim-ruby/vim-ruby'
 " Plugin 'Raimondi/delimitMate'
 
 
-
 " All of your plugins must be added before end
 call vundle#end()   " required
 filetype plugin indent on  " required
@@ -60,23 +59,20 @@ set shiftwidth=2
 set expandtab
 
 " set text width
-"set textwidth=120
+" set textwidth=120
 set colorcolumn=120
 
 " make backspace work like most other apps
 set backspace=2
 
-" python expandtab 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab 
+autocmd FileType go setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType java setlocal tabstop=4 shiftwidth=4 expandtab
 
-" html, ruby, javascript, json
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab 
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab
-
-" tmp for java
-autocmd FileType java setlocal tabstop=4 shiftwidth=4 expandtab
 
 " gradle syntax highlight
 au BufNewFile,BufRead *.gradle setf groovy
@@ -87,11 +83,6 @@ au BufNewFile,BufRead *.gradle setf groovy
 " latex
 autocmd FileType tex setlocal makeprg=pdflatex\ --shell-escape\ '%'
 map <F5> :w<CR> :!pdflatex %<<CR>
-
-" taglist
-" map <F3> :TlistToggle<CR>
-" map <F4> :ts<CR>
-" set tags=/Users/zhengyu/Develop/linux-3.13.7/tags
 
 " Jshint inside vim
 map <F2> :JSHint<CR>

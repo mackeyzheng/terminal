@@ -1,13 +1,14 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/cookie/.oh-my-zsh
+export ZSH=/Users/yuzheng/.oh-my-zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.  # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+
+#ZSH_THEME="robbyrussell"
 #ZSH_THEME="miloshadzic"
+#ZSH_THEME="agnoster"
 ZSH_THEME=""
 
 # Uncomment the following line to use case-sensitive completion.
@@ -52,45 +53,42 @@ ZSH_THEME=""
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history npm zsh-syntax-highlighting)
-
+plugins=(git history npm zsh-syntax-highlighting kubectl)
 
 # User configuration
 
-export DEFAULT_USER=cookie //TODO: change to current user
+# System bin
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# latex
+export PATH=$PATH:/Library/TeX/texbin
 
 # Set Java Version
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
+#Go Environment variable
+# GOPATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# GOROOT
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOROOT/bin
+
+# depot tools, it needs to comes first
+export PATH=$HOME/depot_tools:$PATH
+
+# Etcd API
+export ETCDCTL_API=3
+
+# certs folder
+export CERTS=$HOME/WCF/certs
+
 
 source $ZSH/oh-my-zsh.sh
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
 alias zshconfig="vim ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # List all files colorized in long format, including dot files
 alias ll="ls -lha"
@@ -98,12 +96,23 @@ alias ll="ls -lha"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
-# macdown shortcut
-alias macdown='/Applications/MacDown.app/Contents/SharedSupport/bin/macdown'
-alias atom='/Applications/Atom.app/Contents/Resources/app/atom.sh'
-alias subl='/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'
+# v8
+alias d8=$HOME/v8/v8/out.gn/x64.optdebug/d8
+alias tick-processor=$HOME/v8/v8/tools/mac-tick-processor
 
-
-# load pure
+# pure theme
 autoload -U promptinit; promptinit
 prompt pure
+
+
+### IBM Config ###
+
+### Added by the Bluemix CLI
+source /usr/local/Bluemix/bx/zsh_autocomplete
+
+### Artifactory Creds
+export ARTIFACTORY_USERNAME=username
+export ARTIFACTORY_PASSWORD=password
+
+### WML Creds
+
