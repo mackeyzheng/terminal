@@ -36,3 +36,6 @@ prompt pure
 
 ## Italics Setting in iTerm, vim, tmux and ssh
 Medium Article <https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be>
+
+### oh my tmux
+<https://github.com/gpakosz/.tmux>
