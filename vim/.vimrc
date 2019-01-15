@@ -7,23 +7,20 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " plugins
 Plugin 'moll/vim-node'
 Plugin 'fatih/vim-go'
 Plugin 'Shutnik/jshint2.vim'
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-ruby/vim-ruby'
-" Plugin 'Raimondi/delimitMate'
+Plugin 'dracula/vim'
 
 
 " All of your plugins must be added before end
-call vundle#end()   " required
-filetype plugin indent on  " required
+call vundle#end()           " required
+filetype plugin indent on   " required
 
 " Vundle Section End
-
 
 set autoindent
 set smartindent
@@ -43,12 +40,15 @@ set hlsearch
 set mouse=a
 
 " set highlight
-" syntax on
+syntax on
 
 " set color themes
-syntax enable 
-colorscheme molokai
+" colorscheme molokai
 " set background=dark
+
+" disable italic, need to set before loading dracula color scheme
+" let g:dracula_italic = 0
+color dracula
 
 " set the background transparent
 hi Normal guibg=NONE ctermbg=NONE
@@ -64,6 +64,11 @@ set colorcolumn=120
 
 " make backspace work like most other apps
 set backspace=2
+
+" italic setting within tmux
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab 
 autocmd FileType go setlocal tabstop=4 shiftwidth=4 expandtab

@@ -6,10 +6,7 @@ export ZSH=/Users/yuzheng/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="miloshadzic"
-#ZSH_THEME="agnoster"
-ZSH_THEME=""
+ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -58,15 +55,12 @@ plugins=(git history npm zsh-syntax-highlighting kubectl)
 # User configuration
 
 # System bin
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-
-# latex
-export PATH=$PATH:/Library/TeX/texbin
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/linkedin/bin"
 
 # Set Java Version
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
-#Go Environment variable
+# Go Environment variable
 # GOPATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -75,14 +69,15 @@ export PATH=$PATH:$GOPATH/bin
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOROOT/bin
 
+# latex
+# export PATH=$PATH:/Library/TeX/texbin
+
 # depot tools, it needs to comes first
-export PATH=$HOME/depot_tools:$PATH
+# export PATH=$HOME/depot_tools:$PATH
+
 
 # Etcd API
 export ETCDCTL_API=3
-
-# certs folder
-export CERTS=$HOME/WCF/certs
 
 
 source $ZSH/oh-my-zsh.sh
@@ -96,23 +91,15 @@ alias ll="ls -lha"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
-# v8
-alias d8=$HOME/v8/v8/out.gn/x64.optdebug/d8
-alias tick-processor=$HOME/v8/v8/tools/mac-tick-processor
+# disable italic in when ssh
+alias ssh='TERM=xterm-256color ssh'
+
+# tmux
+alias t='tmux'
+
 
 # pure theme
-autoload -U promptinit; promptinit
-prompt pure
-
-
-### IBM Config ###
-
-### Added by the Bluemix CLI
-source /usr/local/Bluemix/bx/zsh_autocomplete
-
-### Artifactory Creds
-export ARTIFACTORY_USERNAME=username
-export ARTIFACTORY_PASSWORD=password
-
-### WML Creds
-
+#autoload -U promptinit; promptinit
+#prompt pure
+# prompt_newline='%666v'
+# PROMPT=" $PROMPT"
