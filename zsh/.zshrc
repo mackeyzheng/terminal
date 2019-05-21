@@ -50,7 +50,7 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history npm zsh-syntax-highlighting kubectl)
+plugins=(git history zsh-syntax-highlighting autojump npm)
 
 # User configuration
 
@@ -96,7 +96,10 @@ alias ssh='TERM=xterm-256color ssh'
 
 # tmux
 alias t='tmux'
+alias e='exit'
 
+alias vs='code'
+alias v='/usr/local/bin/vim'
 
 # pure theme
 #autoload -U promptinit; promptinit
