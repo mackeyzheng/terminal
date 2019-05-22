@@ -39,6 +39,9 @@ set hlsearch
 " set mouse
 set mouse=a
 
+" share system clipboard
+set clipboard=unnamed
+
 " set highlight
 syntax on
 

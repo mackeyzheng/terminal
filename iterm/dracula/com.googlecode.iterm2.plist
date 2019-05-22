@@ -5,7 +5,7 @@
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
-	<false/>
+	<true/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AnimateDimming</key>
@@ -1184,7 +1184,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads</string>
+	<string>/Applications</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -1224,11 +1224,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2279 61 796 486 1680 -390 2560 1440 </string>
+	<string>300 317 796 486 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2353 -204 1270 787 1680 -390 2560 1417 </string>
+	<string>54 23 2506 1394 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2097 -113 1270 787 1680 -390 2560 1417 </string>
+	<string>133 106 1270 787 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_1B0DC01F-07A7-48E4-81E4-AF843A4A4E99</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_1B0DC01F-07A7-48E4-81E4-AF843A4A4E99_selection</key>
@@ -3656,7 +3656,7 @@
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
